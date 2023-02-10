@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 def uppercase(str):
-    for i in range(len(str)):
-        if ord(str[i]) >= ord('a') and ord(str[i]) <= ord('z'):
-            caps = ord(str[i]) + (ord('A') - ord('a'))
-        else:
-            caps = ord(str[i])
-            print("{}". format(chr(caps)), end=("")
+    for c in str:
+        isupper = ord(c) >= ord('a') and ord(c) <= ord('z')
+        if isupper:
+            # difference between 'a' and 'A'
+            diff = ord('A') - ord('a')
+            c = chr(ord(c) + diff)
+        print("{}".format(c), end='')
     print()
