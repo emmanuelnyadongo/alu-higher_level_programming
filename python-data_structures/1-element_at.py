@@ -1,21 +1,9 @@
-#!/usr/bin/python3
-from calculator_1 import add, sub, mul, div
+!/usr/bin/python3
+# 1-element_at.py
 
 
-def main():
-    a = 10
-    b = 5
-
-    # Can't think of a more elegant way to do it
-    display(a, b, add(a, b), '+')
-    display(a, b, sub(a, b), '-')
-    display(a, b, mul(a, b), '*')
-    display(a, b, div(a, b), '/')
-
-
-def display(a, b, c, sign):
-    print("{} {} {} = {}".format(a, sign, b, c))
-
-
-if __name__ == "__main__":
-    main()
+def element_at(my_list, idx):
+    """Retrive an element from a list."""
+    if idx < 0 or idx > (len(my_list) - 1):
+        return None
+    return (my_list[idx])
