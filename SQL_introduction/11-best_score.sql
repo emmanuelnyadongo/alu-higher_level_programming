@@ -1,4 +1,4 @@
---listing all rcords with certain conditions
+-- listing all rcords with certain conditions
 SELECT score,name
 FROM second_table
 WHERE score >= 10
