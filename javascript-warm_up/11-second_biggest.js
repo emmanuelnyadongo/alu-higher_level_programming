@@ -10,7 +10,6 @@ if (nums.length === 0 || nums.length === 1) {
 
   for (let i = 2; i < nums.length; i++) {
     if (nums[i] > biggestNum) {
- 
       secondBiggestNum = biggestNum;
       biggestNum = nums[i];
     } else if (nums[i] > secondBiggestNum) {
